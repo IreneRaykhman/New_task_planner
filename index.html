@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Planner</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        #taskInput {
+            padding: 10px;
+            width: 300px;
+            margin-right: 10px;
+        }
+        #addTaskButton, #clearTasksButton {
+            padding: 10px 20px;
+            background-color: #27e4d7;
+        }
+        #taskList {
+            list-style-type: none;
+            padding: 0;
+        }
+        #taskList li {
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+            display: flex;
+            align-items: center;
+        }
+        #taskList li.completed {
+            text-decoration: line-through;
+            color: #888;
+        }
+        #emptyMessage {
+            color: grey;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Task Planner</h1>
+    <input type="text" id="taskInput" placeholder="Enter a new task">
+    <button id="addTaskButton">Add Task</button>
+    <button id="clearTasksButton" disabled>Clear Tasks</button>
+    <ul id="taskList"></ul>
+    <p id="emptyMessage">No tasks available</p>
+
+    <script src="index.js"></script>
+</body>
+</html>
